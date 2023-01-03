@@ -14,7 +14,8 @@
   },
   "image": "ghcr.io/alexbelgium/zoneminder-{arch}",
   "ingress": true,
-  "ingress_stream": true,  
+  "ingress_stream": true,
+  "ingress_port": 8099 
   "map": [
     "config:rw",
     "media:rw",
@@ -26,7 +27,7 @@
     "Images_location": "/config/addons_config/zoneminder/images"
   },
   "ports": {
-    "80/tcp": 3778
+    "80/tcp": 8099
   },
   "ports_description": {
     "80/tcp": "web interface"
