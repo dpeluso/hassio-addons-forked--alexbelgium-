@@ -13,6 +13,8 @@
     "ZM_DIR_EVENTS": "/var/cache/zoneminder/events2"
   },
   "image": "ghcr.io/alexbelgium/zoneminder-{arch}",
+  "ingress": true,
+  "ingress_stream": true,  
   "map": [
     "config:rw",
     "media:rw",
